@@ -1,0 +1,7 @@
+const person = {
+    Name : 'Durjoy Chakraborty',
+    Age : 22,
+    Profession : 'Backend Developer',
+    Salary : 50000,
+}
+console.log(person);
