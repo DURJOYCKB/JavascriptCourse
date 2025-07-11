@@ -1,6 +1,6 @@
 // Revers the sentence but not the words
 
-const sentence = 'My name is Durjoy Chkaraborty';
+const sentence = ['Tom', 'Thin', 'Tik', 'Tok'];
 
-const reversed = sentence.split(' ').reverse().join(' ');
+const reversed = sentence.join('');
 console.log(reversed);
