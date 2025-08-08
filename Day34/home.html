@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+   <main class="flex justify-center">
+     <div class="mockup-phone">
+       <div class="mockup-phone-camera"></div>
+       <div class="mockup-phone-display text-black grid place-content-center">
+        
+ 
+         <!-- available balance -->
+          <div>
+            <div class="text-white label">
+              <div class="stat">
+                <div id="amount-balance" class="stat-value">9400</div>
+                <div class="fieldset-desc">Available Balance</div>
+              </div>
+            </div>
+          </div>
+           <div class="divider"></div>
+           <button id="show-add-money" class="btn btn-outline btn-primary">Add Money</button>
+           <button id="show-cash-out" class="btn btn-outline btn-secondary">Cash out</button>
+           <div class="divider"></div>
+           <!--Add Money form start -->
+                 <div id="add-money-form" class=" card-body">
+                     <fieldset class="fieldset">
+                       <label class="label">Amount</label>
+                       <input id="input-add-money" type="text" placeholder="Enter Your Amount" class="input" required/>
+                       <label class="label">Pin</label>
+                       <input id="input-pin-number" type="password" class="input" placeholder="Pin Number" />
+                        <button id="btn-add-money" class="btn btn-neutral mt-4">Add Money</button>
+
+                     </fieldset>
+                 </div>
+           <!--Add Money form end -->
+           <!--Cash Out form start-->
+                <div id="cash-out-form" class=" hidden card-body">
+                     <fieldset class="fieldset">
+                       <label class="label">Amount</label>
+                       <input id="input-cash-out" type="text" placeholder="Enter Your Amount" class="input" required/>
+                       <label class="label">Pin</label>
+                       <input id="input-cash-out-pin-number" type="password" class="input" placeholder="Pin Number" />
+                        <button id="btn-cash-out" class="btn btn-neutral mt-4">Cash Out</button>
+
+                     </fieldset>
+                 </div>
+           <!--Cash Out form end-->
+
+       </div>
+     </div>
+   </main>
+   <script src="js/addMoney.js"></script>
+   <script src="js/cashOut.js"></script>
+   <script src="js/features.js"></script>
+</body>
+</html>
